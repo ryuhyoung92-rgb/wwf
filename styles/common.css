@@ -1,0 +1,29 @@
+#wrap {}
+#wrap * {transition:all 0.3s;}/* 화면크기가 변함에 따라 확확 바뀌는게 아니라 좀 더 자연스럽게 화면비율이 바뀜 */
+#wrap .container {
+    min-width:320px;
+}
+/* mobile design - .sponsor_btn */
+#wrap .container .sponsor_btn {
+    width:164px; height:41px; display:block;/* 인라인이기 때문에 크기가 적용되지 않으므로, display:block으로 크기를 적용시켜줌 */
+    border-radius:37.5px;
+    background:linear-gradient(90deg, #FE9300, #FF7300);
+    display:flex; flex-flow:row nowrap;
+    align-items:center; justify-content:center;
+    gap:10px; margin:0 auto;
+}
+#wrap .container .sponsor_btn:hover::after {
+    animation:move 0.5s linear alternate infinite;
+    font-size:1rem;
+}
+#wrap .container .sponsor_btn::after {
+    content:'>'; display:block;
+    color:#fff; font-size:0.75rem;
+}
+@keyframes move {
+    0% {opacity:1; transform:translateX(5px);}
+    100% {opacity:0; transform:translateX(0);}
+}
+#wrap .container .sponsor_btn em {
+    color:#fff; font-weight:500;
+}

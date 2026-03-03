@@ -1,0 +1,40 @@
+/* 반응형조건 responsive */
+/* mobile(320~) -> tablet(1024~) -> desktop(1250~) */
+@media screen and (min-width:760px) {
+    #wrap .intro {padding:210px 0 100px;}
+    #wrap .intro .logo {width:28px; left:27px; top:28px;}
+    #wrap .intro h1 {margin-bottom:75px;}
+    #wrap .intro h1 span {font-size:2.5rem; font-weight:600;}
+    #wrap .intro .sponsor_btn {width:206px; height:50px;}
+    #wrap .container .sponsor_btn em {font-size:1.2rem;}
+    #wrap .container .sponsor_btn::after {font-size:0.85rem;
+}
+@media screen and (min-width:1024px) {
+    #wrap .intro {padding:410px 0 100px;}
+    #wrap .intro .logo {width:32px; left:36px; top:30px;}
+    #wrap .intro h1 {margin-bottom:100px;}
+    #wrap .intro h1 span {font-size:3.13rem; font-weight:600;}
+    #wrap .intro .sponsor_btn {width:238px; height:60px;}
+    #wrap .container .sponsor_btn em {font-size:1.38rem;}
+    #wrap .container .sponsor_btn::after {font-size:1rem;}
+    #wrap .container .sponsor_btn:hover::after {font-size:1rem;}
+    @keyframes move {
+        0% {opacity:1; transform:translateX(8px);}
+        100% {opacity:0; transform:translateX(0);}
+    }
+}/* 1024~ */
+@media screen and (min-width:1250px) {
+    #wrap .intro {padding:447px 0 100px;}
+    #wrap .intro .logo {width:42px; left:61px; top:53px;}
+    #wrap .intro h1 span {font-size:4.38rem;}
+    #wrap .intro h1 span:nth-child(1) {font-weight:400;}
+    #wrap .intro h1 span:nth-child(2) {font-weight:700;}
+    #wrap .intro .sponsor_btn {width:409px; height:71px;}
+    #wrap .container .sponsor_btn em {font-size:2.13rem;}
+    #wrap .container .sponsor_btn::after {font-size:2rem;}
+    #wrap .container .sponsor_btn:hover::after {font-size:2rem;}
+    @keyframes move {
+        0% {opacity:1; transform:translateX(10px);}
+        100% {opacity:0; transform:translateX(0);}
+    }
+}/* 1250~ */
