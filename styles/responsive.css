@@ -1,13 +1,18 @@
 /* 반응형조건 responsive */
 /* mobile(320~) -> tablet(1024~) -> desktop(1250~) */
-@media screen and (min-width:760px) {
+@media screen and (min-width:640px) {
+    /* ---------------------------------------------------------2행 퀴즈 */
+    #wrap .quiz_bg .quiz {flex-flow:row nowrap;}
+    #wrap .quiz_bg .quiz > * {flex:1;}
+}
+@media screen and (min-width:860px) {
     #wrap .intro {padding:210px 0 100px;}
     #wrap .intro .logo {width:28px; left:27px; top:28px;}
     #wrap .intro h1 {margin-bottom:75px;}
     #wrap .intro h1 span {font-size:2.5rem; font-weight:600;}
     #wrap .intro .sponsor_btn {width:206px; height:50px;}
     #wrap .container .sponsor_btn em {font-size:1.2rem;}
-    #wrap .container .sponsor_btn::after {font-size:0.85rem;
+    #wrap .container .sponsor_btn::after {font-size:0.85rem;}
 }
 @media screen and (min-width:1024px) {
     #wrap .intro {padding:410px 0 100px;}
@@ -21,6 +26,16 @@
     @keyframes move {
         0% {opacity:1; transform:translateX(8px);}
         100% {opacity:0; transform:translateX(0);}
+    }
+    /* ---------------------------------------------------------2행 퀴즈 */
+    #wrap .quiz_bg {padding:150px 80px;}
+    #wrap .quiz_bg .quiz #quiz_list h1 {font-size:2.5rem; margin:0 0 56px;}
+    #wrap .quiz_bg .quiz #quiz_list h2 span {font-size:1.25rem; display:inline-block;}
+    #wrap .quiz_bg .quiz #quiz_list h2 span:nth-child(1) {}
+    #wrap .quiz_bg .quiz #quiz_list h2 span:nth-child(2) {}
+    #wrap .quiz_bg .quiz #quiz_list #quiz_frm ul li label {
+        font-size:1.5rem; line-height:1.5; margin:0 0 30px;
+        background-size:28px; display:block;
     }
 }/* 1024~ */
 @media screen and (min-width:1250px) {

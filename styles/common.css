@@ -1,8 +1,10 @@
+/* 공통 common.css */
 #wrap {}
 #wrap * {transition:all 0.3s;}/* 화면크기가 변함에 따라 확확 바뀌는게 아니라 좀 더 자연스럽게 화면비율이 바뀜 */
 #wrap .container {
     min-width:320px;
 }
+#wrap .container .contents {max-width:1250px; margin:0 auto;}
 /* mobile design - .sponsor_btn */
 #wrap .container .sponsor_btn {
     width:164px; height:41px; display:block;/* 인라인이기 때문에 크기가 적용되지 않으므로, display:block으로 크기를 적용시켜줌 */
