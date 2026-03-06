@@ -10,16 +10,37 @@
     #wrap .intro .logo {width:28px; left:27px; top:28px;}
     #wrap .intro h1 {margin-bottom:75px;}
     #wrap .intro h1 span {font-size:2.5rem; font-weight:600;}
-    #wrap .intro .sponsor_btn {width:206px; height:50px;}
+    #wrap .container .sponsor_btn {width:206px; height:50px;}
+    /* ---------------------------------------------------------3행~6행 공통 */
+    #wrap .container {padding:200px 80px;}
+    #wrap .container .contents h1 {font-size:2.5rem; margin:0 0 40px;}
+    #wrap .container .contents h1+p {font-size:1.38rem;}
+    /* ---------------------------------------------------------3행 */
+    #wrap .video_bg .video h1 {margin:0 0 70px;}
+    #wrap .video_bg .video iframe {height:484px;}
     #wrap .container .sponsor_btn em {font-size:1.2rem;}
     #wrap .container .sponsor_btn::after {font-size:0.85rem;}
+    /* ---------------------------------------------------------5행 */
+    #wrap .humanity_bg .humanity .list {flex-flow:row nowrap;}
+    #wrap .humanity_bg .humanity .list li {flex:1;}
+    #wrap .humanity_bg .humanity .list li dl {
+        background-position:center bottom; background-repeat:no-repeat;
+        background-size:100%;
+        padding:48px 0 182px;
+    }
+    #wrap .humanity_bg .humanity .list li:nth-child(3) dl {
+        background-size:cover;
+    }
+    #wrap .humanity_bg .humanity .list li dl dt {font-size:2.69rem;}
+    #wrap .humanity_bg .humanity .list li .txt {height:250px;}
+    #wrap .humanity_bg .humanity .list li .txt p {font-size:1rem;}
 }
 @media screen and (min-width:1024px) {
     #wrap .intro {padding:410px 0 100px;}
     #wrap .intro .logo {width:32px; left:36px; top:30px;}
     #wrap .intro h1 {margin-bottom:100px;}
     #wrap .intro h1 span {font-size:3.13rem; font-weight:600;}
-    #wrap .intro .sponsor_btn {width:238px; height:60px;}
+    #wrap .container .sponsor_btn {width:238px; height:60px;}
     #wrap .container .sponsor_btn em {font-size:1.38rem;}
     #wrap .container .sponsor_btn::after {font-size:1rem;}
     #wrap .container .sponsor_btn:hover::after {font-size:1rem;}
@@ -37,6 +58,20 @@
         font-size:1.5rem; line-height:1.5; margin:0 0 30px;
         background-size:28px; display:block;
     }
+    /* ----------------------------------------------------------8행 활동내역 */
+    #wrap .activity_bg .activity .details {
+        grid-template-areas:
+            'public nature'
+            'corporation nature';
+        grid-template-columns:1fr 1fr;
+    }
+    #wrap .activity_bg .activity .details li {position:relative; padding-bottom:30px;}
+    #wrap .activity_bg .activity .details li .txt {width:50%;}
+    #wrap .activity_bg .activity .details li:last-child .txt {
+        position:absolute; left:0; bottom:30px;
+    }
+    #wrap .activity_bg .activity .details li .txt dt {font-size:2rem;}
+    #wrap .activity_bg .activity .details li .txt dd {font-size:1.25rem; line-height:1.7;}
 }/* 1024~ */
 @media screen and (min-width:1250px) {
     #wrap .intro {padding:447px 0 100px;}
@@ -44,7 +79,12 @@
     #wrap .intro h1 span {font-size:4.38rem;}
     #wrap .intro h1 span:nth-child(1) {font-weight:400;}
     #wrap .intro h1 span:nth-child(2) {font-weight:700;}
-    #wrap .intro .sponsor_btn {width:409px; height:71px;}
+    /* ---------------------------------------------------------3행~6행 공통 */
+    #wrap .container {padding:200px 235px;}
+    #wrap .container .contents h1 {font-size:3.44rem; margin:0 0 80px;}
+    #wrap .container .contents h1+p {font-size:2.13rem; margin:0 0 80px;}
+    /* ---------------------------------------------------------3행 */
+    #wrap .container .sponsor_btn {width:409px; height:71px;}
     #wrap .container .sponsor_btn em {font-size:2.13rem;}
     #wrap .container .sponsor_btn::after {font-size:2rem;}
     #wrap .container .sponsor_btn:hover::after {font-size:2rem;}

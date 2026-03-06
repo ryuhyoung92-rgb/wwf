@@ -3,8 +3,20 @@
 #wrap * {transition:all 0.3s;}/* 화면크기가 변함에 따라 확확 바뀌는게 아니라 좀 더 자연스럽게 화면비율이 바뀜 */
 #wrap .container {
     min-width:320px;
+    background-size:cover; background-position:center;
+    padding:70px 15px;
 }
 #wrap .container .contents {max-width:1250px; margin:0 auto;}
+#wrap .container .contents h1 {
+    font-size:1.38rem; font-weight:500;
+    line-height:1.2; color:#000; margin:0 0 40px;
+}
+#wrap .container .contents h1 .highlight {
+    background-color:#fff; color:#050505; font-weight:500;
+}
+#wrap .container .contents h1+p {
+    font-size:0.81rem; line-height:1.7; font-weight:500; margin:0 0 22px;
+}
 /* mobile design - .sponsor_btn */
 #wrap .container .sponsor_btn {
     width:164px; height:41px; display:block;/* 인라인이기 때문에 크기가 적용되지 않으므로, display:block으로 크기를 적용시켜줌 */
